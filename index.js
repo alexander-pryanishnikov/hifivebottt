@@ -9,7 +9,7 @@ const {
     confirm,
     shopOrOrder,
     vapesMax,
-    vapesMax1, shopOrOrder1, vapesMax2
+    vapesMax1, shopOrOrder1, vapesMax2, again
 } = require('./options')
 
 // const mongo = require('./db')
@@ -115,7 +115,7 @@ const start = async () => {
 
                 history.save()
 
-                bot.sendMessage(message.message.chat.id, "Заказ оформлен")
+                bot.sendMessage(message.message.chat.id, "Заказ оформлен", again)
                 // bot.sendMessage(message.message.chat.id, `${history}`)
             })
 

@@ -28,6 +28,14 @@ module.exports = {
         })
     },
 
+    again: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [{text: "Сделать ещё один заказ", callback_data: "/start"}],
+            ]
+        })
+    },
+
     vapesMax: {
         reply_markup: JSON.stringify({
             inline_keyboard: [
