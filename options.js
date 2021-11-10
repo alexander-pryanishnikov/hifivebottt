@@ -56,6 +56,62 @@ module.exports = {
         })
     },
 
+    vapesMax1: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [
+                    {text: "Виноград", callback_data: "max-grape1"},
+                    {text: "Банан", callback_data: "max-banana"}
+                ],
+                [
+                    {text: 'Манго', callback_data: "max-mango"},
+                    {text: "Охлаждающая мята", callback_data: "max-mint"}
+                ],
+                [
+                    {text: "Ледяная дыня", callback_data: "max-melon"},
+                    {text: "Мамба", callback_data: "max-mamba"}
+                ],
+                [
+                    {text: "Клубника-арбуз", callback_data: "max-strawberry"},
+                    {text: "Ледяной банан", callback_data: "max-icebanana"}
+                ],
+                [
+                    {text: "Ягодный микс", callback_data: "max-mix"},
+                    {text: "Арбуз", callback_data: "max-watermelon"},
+                ]
+                // [{text:"кнопка 3", callback_data: "LL"}]
+            ]
+        })
+    },
+
+    vapesMax2: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [
+                    {text: "Виноград", callback_data: "max-grape2"},
+                    {text: "Банан", callback_data: "max-banana"}
+                ],
+                [
+                    {text: 'Манго', callback_data: "max-mango"},
+                    {text: "Охлаждающая мята", callback_data: "max-mint"}
+                ],
+                [
+                    {text: "Ледяная дыня", callback_data: "max-melon"},
+                    {text: "Мамба", callback_data: "max-mamba"}
+                ],
+                [
+                    {text: "Клубника-арбуз", callback_data: "max-strawberry"},
+                    {text: "Ледяной банан", callback_data: "max-icebanana"}
+                ],
+                [
+                    {text: "Ягодный микс", callback_data: "max-mix"},
+                    {text: "Арбуз", callback_data: "max-watermelon"},
+                ]
+                // [{text:"кнопка 3", callback_data: "LL"}]
+            ]
+        })
+    },
+
     orderButton: {
         reply_markup: JSON.stringify({
             inline_keyboard: [
@@ -83,7 +139,19 @@ module.exports = {
             inline_keyboard: [
                 [
                     {text: "Перейти в корзину", callback_data: "/order"},
-                    {text: "Перейти к моделям", callback_data: 'Max'}
+                    {text: "Выбрать ещё", callback_data: 'Max'}
+                ]
+                // [{text:"кнопка 3", callback_data: "LL"}]
+            ]
+        })
+    },
+
+    shopOrOrder1: {
+        reply_markup: JSON.stringify({
+            inline_keyboard: [
+                [
+                    {text: "Перейти в корзину", callback_data: "/order"},
+                    {text: "Перейти к моделям", callback_data: 'max2'}
                 ]
                 // [{text:"кнопка 3", callback_data: "LL"}]
             ]

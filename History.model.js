@@ -1,8 +1,11 @@
-const mongoose = require("mongoose");
+const mongoose = require ("mongoose");
 
-const User = mongoose.model(
-    "User",
+const History = mongoose.model(
+    "History",
     new mongoose.Schema({
+        status: String,
+        date: String,
+        check: Number,
         username: String,
         order: [String]
         // email: String,
@@ -16,6 +19,4 @@ const User = mongoose.model(
         // ]
     })
 );
-
-
-module.exports = User;
+module.exports = History;

@@ -1,10 +1,12 @@
-const mongoose = require("mongoose");
+const mongoose = require ("mongoose");
 
-const User = mongoose.model(
-    "User",
+const Bonus = mongoose.model(
+    "Bonus",
     new mongoose.Schema({
         username: String,
-        order: [String]
+        token: "Number",
+        money: "Number",
+        counterVisitors: [String]
         // email: String,
         // password: String,
         // gameId: "Number",
@@ -16,6 +18,4 @@ const User = mongoose.model(
         // ]
     })
 );
-
-
-module.exports = User;
+module.exports = Bonus;
