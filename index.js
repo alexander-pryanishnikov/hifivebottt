@@ -25,7 +25,7 @@ const History = require('./History.model')
 const Bonus = require("./Bonus.model");
 
 
-const token = process.env.BOT_TOKEN
+const token = botqwe
 // const token = '2105531379:AAGFWiV5egnpF6TIx3gQdyjNYoHV9SO4nq4'
 
 const bot = new TelegramApi(token, {polling: true})
@@ -115,7 +115,7 @@ const start = async () => {
 
                 history.save()
 
-                bot.sendMessage(message.message.chat.id, "Заказ оформлен", again)
+                bot.sendMessage(message.message.chat.id, "Заказ оформлен, если хотите сделать ещё один заказ нажмите на /start")
                 // bot.sendMessage(message.message.chat.id, `${history}`)
             })
 
