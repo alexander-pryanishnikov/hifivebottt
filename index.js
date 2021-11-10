@@ -25,7 +25,7 @@ const History = require('./History.model')
 const Bonus = require("./Bonus.model");
 
 
-const token = '2089873313:AAFD2RxxHKuoyFr1K1IlC07mxLDu0h0JNMo'
+const token = process.env.BOT_TOKEN
 // const token = '2105531379:AAGFWiV5egnpF6TIx3gQdyjNYoHV9SO4nq4'
 
 const bot = new TelegramApi(token, {polling: true})
